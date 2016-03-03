@@ -1,0 +1,85 @@
+html, body    {
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+header {
+  width: 100%;
+  background-color: cadetblue;
+  background-color: ;
+  text-align: center;
+}
+
+h2 {
+  width:80%;
+  margin:0 auto;
+  padding: 10px;
+}
+
+form {
+    padding: 5px;
+}
+
+fieldset {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+label {
+    background-color: rgba(255,178,102,0.6);
+    border-radius: 3px;
+    padding:0 30px;
+    box-shadow: -2px 1px 3px rgba(0,0,0,0.1);
+    
+}
+
+input[type="text"], input[type="password"] {
+    background-color: rgba(224,224,224,0.6);
+    border-radius: 3px;
+    border: 2px solid rgba(0,153,153,0.1);
+    padding: 0 10px;
+    transition: .8s;
+    box-shadow: -2px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: rgba(224,224,224,0.3);
+    border-color: rgba(0,153,153,0.8);
+    transition: .8s;
+}
+
+.btn-primary, .btn {
+    background-color: rgba(0,153,153,1);
+    border-color: rgba(0,153,153,1);
+}
+
+.btn-primary:hover, .btn:hover {
+    background-color: rgba(0,153,153,0.5);
+    border-color: rgba(0,153,153,1);
+    transition: 0.5s;
+}
+
+.btn-primary:active, .btn:active {
+    background-color: rgba(0,153,153,0.5);
+    border-color: rgba(0,153,153,1);
+}
+
+.right{
+    float: right;
+}
+
+//@media screen and (max-width : 900px) { }
+
+.info{
+    color: navy;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.erreur{
+    color: red;
+    font-style: bold;
+    font-size: 10px;
+}
