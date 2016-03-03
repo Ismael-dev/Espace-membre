@@ -6,7 +6,7 @@ include ('header.php');
 // Connexion à la base de données
 require_once ('conndb.php');
 
-//Verification de la présence du mail dans la bd pour eviter de créer plusieur compte avec la même adresse.
+//Verification de la présence du mail dans la bd pour eviter de créer plusieurs comptes avec la même adresse mail.
 $requete = $connDB->prepare("SELECT * FROM users");
 $requete->execute();
 $users = $requete->fetchAll(PDO::FETCH_ASSOC);
@@ -44,7 +44,7 @@ if((isset($_POST['email']))&&(isset($_POST['pass']))){
 }
 
 
-debug($users);
+//debug($users);
 
 
 
